@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "SideNav Display Display Display"
+    "SideNav Display Display Display"
+    "SideNav Display Display Display"
+    "SideNav Display Display Display"
+    "SideNav Display Display Display";
+}
+
+.side-nav {
+  grid-area: SideNav;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  grid-area: Header;
+  background-color: #336699;
+}
+
+.display {
+  grid-area: Display;
+}
+
+.nav-wrapper {
+  width: 85%;
+  margin: 5px auto 0;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-wrapper div {
+  outline: none;
+  border: none;
+}
+
+.nav-wrapper div a {
+  text-decoration: none;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  border: none;
+  color: #ffcc66;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  background-color: #336699;
+  border-bottom: 4px solid #336699;
+  outline: none;
+}
+
+.nav-wrapper div a:hover {
+  border-bottom: 4px solid #ffcc66;
+  cursor: pointer;
+}
+
+.nav-wrapper div a > span {
+  margin: 0 2px;
+  font-size: 30px;
+}
+
+.app-name {
+  color: #ffcc66;
+  letter-spacing: 2.5px;
+  font-size: 30px;
+}
+
+.app-name span {
+  color: #fff;
+}
+
+.side-nav a {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #336699;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  background-color: #ffcc66;
+  opacity: 0.8;
+  box-shadow: 8px 6px 15px 2px rgba(51, 102, 153, 0.59);
+  border-radius: 5px;
+}
+
+.notes-main {
+  display: flex;
+}
+
+.notes-main ul {
+  width: 60%;
+}
+
+.note-panel {
+  width: 40%;
+}
+
+.note {
+  margin: 20px 15px;
+  padding: 25px;
+  list-style: none;
+  color: #336699;
+  border: 2.5px solid #336699;
+}
+
+.note:hover {
+  cursor: pointer;
+}

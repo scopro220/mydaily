@@ -127,3 +127,66 @@ html {
 .note:hover {
   cursor: pointer;
 }
+
+.weather-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-main form {
+  margin: 0 auto;
+}
+
+.weather-search {
+  color: #336699;
+  font-size: 36px;
+  margin: 25px auto 35px;
+  border: none;
+  border-bottom: 2px solid #336699;
+  text-align: center;
+}
+
+.weather-search:focus {
+  outline: none;
+}
+
+.weather-main .title {
+  margin-left: 40px;
+  font-size: 40px;
+  color: #ffcc66;
+  text-shadow: 1px 1px #336699;
+}
+
+.weather-main .weather-items {
+  margin: 10px;
+  color: #336699;
+}
+
+.weather-main .weather-item {
+  border-bottom: 1px solid #336699;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin: 0 125px;
+  padding: 12px;
+}
+
+.weather-main .weather-item:last-child {
+  border-bottom: none;
+}
+
+.weather-main .weather-item li {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  height: 50px;
+}
+
+.weather-main .weather-item li img {
+  padding-right: 15px;
+}
+
+.weather-desc {
+  height: 50px;
+}

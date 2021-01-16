@@ -42,7 +42,6 @@ const Weather = () => {
             onChange={handleChange}
           />
         </form>
-        <h1 className="title">8-Day Forecast</h1>
         <div className="weather-items">
           {weatherData.map((day) => (
             <div className="weather-item" key={day.dt}>

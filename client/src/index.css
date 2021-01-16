@@ -29,6 +29,7 @@ html {
   grid-area: SideNav;
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
 }
 
 .header {
@@ -98,22 +99,41 @@ html {
 }
 
 .side-nav a:hover {
-  background-color: #ffcc66;
+  background-color: #ffcc6696;
   opacity: 0.8;
-  box-shadow: 8px 6px 15px 2px rgba(51, 102, 153, 0.59);
-  border-radius: 5px;
+  box-shadow: 2px 2px 6px 1px #33669996;
+  /* border-radius: 5px; */
 }
 
 .notes-main {
   display: flex;
+  flex-direction: column;
 }
 
 .notes-main ul {
-  width: 60%;
+  width: 80%;
+  max-height: 680px;
+  overflow-y: auto;
+  margin: 0 auto;
 }
 
-.note-panel {
-  width: 40%;
+.notes-main ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #336699;
+  -webkit-box-shadow: inset 0 0 6px #336699;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.notes-main ul::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.notes-main ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px #336699;
+  -webkit-box-shadow: inset 0 0 6px #336699;
+  background-color: #336699;
 }
 
 .note {
@@ -121,10 +141,19 @@ html {
   padding: 25px;
   list-style: none;
   color: #336699;
-  border: 2.5px solid #336699;
+  box-shadow: 1px 1px 4px 1px #33669996;
 }
 
-.note:hover {
+.note .note-desc {
+  margin-bottom: 8px;
+}
+
+.note svg {
+  color: #993333;
+  font-size: 24px;
+}
+
+.note svg:hover {
   cursor: pointer;
 }
 
@@ -140,7 +169,7 @@ html {
 .weather-search {
   color: #336699;
   font-size: 36px;
-  margin: 25px auto 35px;
+  margin: 15px auto 5px;
   border: none;
   border-bottom: 2px solid #336699;
   text-align: center;
@@ -158,7 +187,7 @@ html {
 }
 
 .weather-main .weather-items {
-  margin: 10px;
+  margin: 30px;
   color: #336699;
 }
 
@@ -189,4 +218,109 @@ html {
 
 .weather-desc {
   height: 50px;
+}
+
+.notes-main form {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.notes-form {
+  display: flex;
+  align-content: flex-end;
+  padding-left: 10px;
+}
+
+form svg {
+  font-size: 30px;
+}
+
+form svg:hover {
+  cursor: pointer;
+}
+
+.note-label {
+  color: #336699;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.note-label input {
+  margin: 0 5px;
+  border: none;
+  font-size: 18px;
+  color: #336699;
+  border-bottom: 1.5px solid #336699;
+}
+
+.note-label input:focus {
+  outline: none;
+}
+
+.landing-page {
+  grid-column: 1 / 5;
+  grid-row: 2 / 7;
+  z-index: 1;
+  position: relative;
+  background-color: #336699;
+}
+
+.landing-page::before {
+  content: "";
+  background-image: url(./images/Landing-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.35;
+  z-index: -1;
+  position: absolute;
+}
+
+.landing-page section {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  margin: 10% 10% 0 0;
+  color: #fff;
+}
+
+.landing-title {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.landing-title span {
+  color: #ffcc66;
+}
+
+.landing-page h2 {
+  margin-bottom: 15px;
+}
+
+.landing-page .feature-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.landing-page-feature-icons {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.landing-page-feature-icons p {
+  margin-right: 5px;
+  height: 1em;
+}
+
+.landing-page-feature-icons svg {
+  color: #ffcc66;
 }

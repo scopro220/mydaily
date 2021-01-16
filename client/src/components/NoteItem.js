@@ -1,11 +1,16 @@
 import React from "react";
+import { CgTrash } from "react-icons/cg";
 
-const NoteItem = ({ title, description }) => {
+const NoteItem = ({ description, note, notes, setNotes }) => {
+  const deleteHandler = () => {
+    setNotes(notes.filter((el) => el.id !== note.id));
+  };
+
   return (
     <>
       <li className="note">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <p className="note-desc">{description}</p>
+        <CgTrash onClick={deleteHandler} />
       </li>
     </>
   );

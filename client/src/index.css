@@ -49,35 +49,6 @@ html {
   justify-content: space-between;
 }
 
-.nav-wrapper div {
-  outline: none;
-  border: none;
-}
-
-.nav-wrapper div a {
-  text-decoration: none;
-  display: flex;
-  font-size: 24px;
-  align-items: center;
-  border: none;
-  color: #ffcc66;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  background-color: #336699;
-  border-bottom: 4px solid #336699;
-  outline: none;
-}
-
-.nav-wrapper div a:hover {
-  border-bottom: 4px solid #ffcc66;
-  cursor: pointer;
-}
-
-.nav-wrapper div a > span {
-  margin: 0 2px;
-  font-size: 30px;
-}
-
 .app-name {
   color: #ffcc66;
   letter-spacing: 2.5px;
@@ -102,7 +73,6 @@ html {
   background-color: #ffcc6696;
   opacity: 0.8;
   box-shadow: 2px 2px 6px 1px #33669996;
-  /* border-radius: 5px; */
 }
 
 .notes-main {
@@ -282,8 +252,8 @@ form svg:hover {
 }
 
 .landing-page section {
-  width: 350px;
-  height: 400px;
+  width: 375px;
+  height: 450px;
   position: absolute;
   right: 0;
   margin: 10% 10% 0 0;
@@ -301,6 +271,11 @@ form svg:hover {
 
 .landing-page h2 {
   margin-bottom: 15px;
+}
+
+.landing-page h3 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .landing-page .feature-wrapper {
@@ -323,4 +298,25 @@ form svg:hover {
 
 .landing-page-feature-icons svg {
   color: #ffcc66;
+}
+
+.get-started {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 26px;
+  text-decoration: none;
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid #ffcc66;
+  border-radius: 12px;
+  color: #ffcc66;
+  font-weight: 700;
+}
+
+.get-started:hover {
+  border: 2px solid #ffcc66;
+  color: #fff;
+  background-color: #ffcc66;
+  cursor: pointer;
 }

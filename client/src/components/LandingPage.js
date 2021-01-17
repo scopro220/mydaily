@@ -18,6 +18,7 @@ const LandingPage = () => {
           No longer do you have to check 3, 4 or 5 websites to get everything
           you're looking for. So login today and get started.
         </p>
+        <h3>Features</h3>
         <div className="feature-wrapper">
           <div className="feature-left">
             <div className="landing-page-feature-icons">
@@ -40,6 +41,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <a href="/notes" className="get-started">
+          Get Started Today
+        </a>
       </section>
     </div>
   );

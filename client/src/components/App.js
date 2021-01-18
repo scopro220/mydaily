@@ -5,6 +5,7 @@ import Header from "./Header";
 import LandingPage from "./LandingPage";
 import Notes from "./Notes";
 import Weather from "./Weather";
+import Todo from "./ToDo";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" exact component={LandingPage} />
           <Route path="/notes" exact component={Notes} />
           <Route path="/weather" exact component={Weather} />
+          <Route path="/todo" exact component={Todo} />
           <Route path="*">
             <div
               style={{

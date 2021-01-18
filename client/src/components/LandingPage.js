@@ -10,9 +10,7 @@ const LandingPage = () => {
           Welcome to My<span>Daily</span>
         </h1>
         <h2>Productivity at your fingertips</h2>
-        <p>
-          MyDaily provides a one stop shop for notes, weather, to-dos and more
-        </p>
+        <p>MyDaily provides a one stop shop for notes, to-dos, and weather</p>
         <br />
         <p>
           No longer do you have to check 3, 4 or 5 websites to get everything

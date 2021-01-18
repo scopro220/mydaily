@@ -167,7 +167,7 @@ html {
   justify-content: space-evenly;
   font-size: 30px;
   margin: 0 125px;
-  padding: 12px;
+  padding: 12px 12px 0;
 }
 
 .weather-main .weather-item:last-child {
@@ -176,17 +176,8 @@ html {
 
 .weather-main .weather-item li {
   list-style-type: none;
-  text-align: center;
   display: flex;
   align-self: center;
-  height: 50px;
-}
-
-.weather-main .weather-item li img {
-  padding-right: 15px;
-}
-
-.weather-desc {
   height: 50px;
 }
 

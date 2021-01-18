@@ -51,7 +51,9 @@ const Weather = () => {
                   src={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`}
                   alt="#"
                 />
-                {day.temp.max.toFixed()} / {day.temp.min.toFixed()} &#176;F
+                <div>
+                  {day.temp.max.toFixed()} / {day.temp.min.toFixed()} &#176;F
+                </div>
               </li>
               <li className="weather-desc">{day.weather[0].main}</li>
             </div>
